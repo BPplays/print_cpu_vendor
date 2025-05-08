@@ -8,8 +8,9 @@ import (
 
 func main() {
 	vendorid := flag.Bool("v", false, "vendorid")
-	family := flag.Bool("b", false, "family")
+	family := flag.Bool("f", false, "family")
 	model := flag.Bool("m", false, "model")
+	flag.Parse()
 
 	if *family {
 		fmt.Println(CPU.Family)
